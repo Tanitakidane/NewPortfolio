@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style/style.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Responsive Blog Section</title>
+  <style>
+
+    *{
+      margin: 0;
+      padding: 0;
+    }
+
+    html,body{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 17px;
+    }
+
+    .container{
+      background-color: rgb(3, 3, 3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    .blog-btn{
+     width: 400px;
+     height: 20px;
+     margin-top: 5%;
+     margin-bottom: 5%;
+     background-color: rgba(245, 59, 59, 1.6);
+     font-size: 25px;
+     border-radius: 50px;
+     color: white;
+     padding: 3%;
+     cursor: pointer;
+    }
+    .blog-btn1{
+     width: 400px;
+     height: 20px;
+     margin-top: 5%;
+     margin-bottom: 5%;
+     background-color: rgba(245, 59, 59, 1.6);
+     font-size: 25px;
+     border-radius: 50px;
+     color: white;
+     padding: 3%;
+     cursor: pointer;
+    }
+      .button{
+        text-decoration: none;
+        font-size: 0.875rem;
+        font-weight: 599;
+        text-transform: uppercase;
+        display: inline-block;
+        border-radius: 1.5rem;
+        background-color: white;
+        color: black;
+        padding: 1rem 2rem;
+      }
+
+      .popup{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        bottom: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.80);
+        z-index: 2;
+        visibility: hidden;
+        opacity: 0;
+        overflow: hidden;
+        transition: 0.74 ease-in-out;
+      }
+
+      .popup-inner{
+        position: relative;
+        bottom: -100vw;
+        right: -100vh;
+        display: flex;
+        align-items: center;
+        max-width: 800px;
+        max-height: 599px;
+        width: 59%;
+        height: 80%;
+        background-color: white;
+        transform: rotate(32deg);
+        transition: 0.74s ease-in-out;
+      }
+      .popup-photo{
+        display: flex;
+        justify-content: flex-end;
+        align-content: flex-end;
+        width: 40%;
+        height: 100%;
+        overflow: hidden;
+      }
+      .popup-photo img{
+        width: auto;
+        height: 100%;
+      }
+      .popup-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 59%;
+        height: 100%;
+        padding: 4rem;
+      }
+
+      .popup-text h1{
+        font-size: 2rem;
+        font-weight: 599;
+        margin-bottom: 2rem;
+        text-transform: uppercase;
+        color: #0a0a0a;
+      }
+
+      .popup-text h1{
+        font-size: 0.875rem;
+        color: black;
+        line-height: 1.5;
+      }
+
+      .popup:target{
+        visibility: visible;
+        opacity: 1;
+      }
+
+      .popup:target .popup-inner{
+        bottom: 0;
+        right: 0;
+        transform: rotate(0);
+      }
+
+      .popup-close{
+        position: absolute;
+        right: -1rem;
+        top: -1rem;
+        width: 3rem;
+        height: 3rem;
+        font-size: 0.875;
+        font-size: 400;
+        border-radius: 100%;
+        background-color: #0a0a0a;
+        z-index: 4;
+        color: white;
+        line-height: 3rem;
+        text-align: center;
+        cursor: pointer;
+        text-decoration: none;
+      }
+</style>
+</head>
+
+<a href="#popup"><button class="blog-btn">View More..</button></a>
+              <div class="popup" id="popup">
+               <div class="popup-inner"> 
+                 <div class="popup-photo">
+                   <img src="img/Tanita.jpg" alt="">
+                   <div class="popup-text">
+                     <h1>rrrrrrrrrrrrrr</h1>
+                     <p>ggggggggggggggggggggg ggggggggggggggggggggg ggggggggggggg  ggggggggggg gggggggggggggg gggggggggggggg ggggggggggg ggggggggggg ggggggggg g</p>
+                     </div>
+
+
+
+                  
