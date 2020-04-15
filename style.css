@@ -1,4 +1,4 @@
- @font-face {
+@font-face {
   font-family: 'Raiderfont';
   src: local('Raiderfont'), url('./fonts/Raiderfont.ttf') format('truetype');
 }
@@ -102,7 +102,7 @@ ul {
 }
 
 .img-wrapper .tanita {
-  background-image: url('https://imgur.com/m3yGjIH');
+  background-image: url('./img/Tanita1.jpg');
   background-size: cover;
   height: 870px;
   width: 0;

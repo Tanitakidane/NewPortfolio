@@ -1,4 +1,84 @@
-  .body1{
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,600');
+body {
+	margin: 0;
+	background: #222;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 800;
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+header {
+  background: #0e811d00;
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.logo {
+  float: left;
+  padding: 10px 0;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 70px;
+  padding-top: 23px;
+
+  position: relative;
+}
+
+nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: rgb(48, 245, 81);
+}
+
+nav a::before {
+  content: '';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: 0;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 100%;
+}
+   body{
+    padding: 0px;
+    margin: 0px;  
+    font-family: sans-serif;
+    z-index: 100;
+   }    
+
+ .body1{
     padding: 0px;
     margin: 0px;  
     background-color: rgba(250, 8, 8, 0.966);
@@ -32,21 +112,33 @@
      margin: auto;
      overflow: hidden;
    }
+   body{
+    padding: 0px;
+    margin: 0px;  
+    background-color: rgb(248, 245, 245);
+    font-family: sans-serif;
+    line-height: 1.5;
+   }  
+
+   #blog-sec .container{
+     width: 90%;
+     margin: auto;
+     overflow: hidden;
+   }
   .main-heading{
     text-align: center;
     text-decoration: underline;
-    color: rgb(238, 235, 235);
-    text-decoration-color: rgb(255, 255, 255);
+    text-decoration-color:rgba(245, 59, 59, 1.6);
     text-underline-position: under;
     padding-top: 1%;
-    z-index: 100;
+    color: #fff;
   }
 
-  .container1 .para{
+  .container .para{
     text-align: center;
-     width: 70%; 
+     width: 70%;
      margin-left: auto;
-      margin-right: auto; 
+      margin-right: auto;
       padding-bottom: 3%;
     letter-spacing: 2px;
   }
@@ -66,14 +158,14 @@
   letter-spacing: 2px;
  }
  .blog-head{
-  background-color: rgb(255, 255, 255);
+  background-color: #fff;
   position: relative;
   bottom: 10%;
   width: 70%;
   float: left;
-  box-shadow: 3px 1px 5px rgb(255, 255, 255);
-  border: 1px solid rgb(255, 255, 255);
-  z-index: 100;
+  box-shadow: 3px 1px 5px #ccc;
+  border: 1px solid rgb(190, 187, 187);
+
  }
  .blog-date{
   padding: 0px;
@@ -110,7 +202,7 @@
 
    @media (max-width: 768px){
 
-    #blog-sec .blog-pics{`
+    #blog-sec .blog-pics{
       display: block;
       width: 90%;
       text-align: center;
@@ -128,180 +220,3 @@
 
    }
 
-   .blog-btn{
-    width: 400px;
-    height: 20px;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    background-color: rgba(245, 59, 59, 1.6);
-    font-size: 25px;
-    border-radius: 50px;
-    color: white;
-    padding: 3%;
-    cursor: pointer;
-   }
-   .blog-btn1{
-    width: 400px;
-    height: 20px;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    background-color: rgba(245, 59, 59, 1.6);
-    font-size: 25px;
-    border-radius: 50px;
-    color: white;
-    padding: 3%;
-    cursor: pointer;
-   }
-     .button{
-       text-decoration: none;
-       font-size: 0.875rem;
-       font-weight: 599;
-       text-transform: uppercase;
-       display: inline-block;
-       border-radius: 1.5rem;
-       background-color: white;
-       color: black;
-       padding: 1rem 2rem;
-     }
-
-     .popup{
-       display: flex;
-       align-items: center;
-       justify-content: center;
-       position: fixed;
-       width: 100vw;
-       height: 100vh;
-       bottom: 0;
-       right: 0;
-       background-color: rgba(0, 0, 0, 0.80);
-       z-index: 2;
-       visibility: hidden;
-       opacity: 0;
-       overflow: hidden;
-       transition: 0.74 ease-in-out;
-     }
-
-     .popup-inner{
-       position: relative;
-       bottom: -100vw;
-       right: -100vh;
-       display: flex;
-       align-items: center;
-       max-width: 800px;
-       max-height: 599px;
-       width: 59%;
-       height: 80%;
-       background-image: url(https://media.giphy.com/media/42IEOtbaHuMmIXgAzS/giphy.gif);
-       background-size: 50%;
-       background-color: rgb(255, 255, 255);
-       transform: rotate(32deg);
-       transition: 0.74s ease-in-out;
-     }
-     .popup-photo{
-       display: flex;
-       justify-content: flex-end;
-       align-content: flex-end;
-       width: 85%;
-       height: 100%;
-       overflow: hidden;
-     }
-     .popup-photo img{
-       width: au1to;
-       height: 100%;
-     }
-     .popup-text{
-       display: flex;
-       flex-direction: column;
-       justify-content: center;
-       width: 70%;
-       height: 100%;
-       padding: 4rem;
-     }
-
-     .popup-text h1{
-       font-size: 2rem;
-       font-weight: 599;
-       margin-bottom: 2rem;
-       text-transform: uppercase;
-       color: #ffffff;
-     }
-
-     .popup-text p{
-       font-size: 0.875rem;
-       color: rgb(255, 255, 255);
-       line-height: 1.5;
-       width: 100%;
-       margin-bottom: auto;
-     }
-
-     .popup:target{
-       visibility: visible;
-       opacity: 1;
-     }
-
-     .popup:target .popup-inner{
-       bottom: 0;
-       right: 0;
-       transform: rotate(0);
-     }
-
-     .popup-close{
-       position: absolute;
-       right: -1rem;
-       top: -1rem;
-       width: 3rem;
-       height: 3rem;
-       font-size: 0.875;
-       font-size: 400;
-       border-radius: 100%;
-       background-color: #0a0a0a;
-       z-index: 4;
-       color: white;
-       line-height: 3rem;
-       text-align: center;
-       cursor: pointer;
-       text-decoration: none;
-     }
-
-     .bg-modal {
-      background-color: rgba(0, 0, 0, 0.8);
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      display: none;
-      justify-content: center;
-      align-items: center;
-    }
-    
-    .modal-contents {
-      height: 300px;
-      width: 500px;
-      background-color: white;
-      text-align: center;
-      padding: 20px;
-      position: relative;
-      border-radius: 4px;
-    }
-    
-    .input {
-      margin: 15px auto;
-      display: block;
-      width: 50%;
-      padding: 8px;
-      border: 1px solid gray;
-    }
-    
-    .close {
-      position: absolute;
-      top: 0;
-      right: 10px;
-      font-size: 42px;
-      color: #333;
-      transform: rotate(45deg);
-      cursor: pointer;
-      &:hover {
-        color: #666;
-      }
-    }
-    
